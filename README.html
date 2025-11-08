@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookReader - Ваша библиотека</title>
+    <style>
+        /* CSS стили будут здесь */
+    </style>
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>BookReader</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link active">Библиотека</a>
+                <a href="#" class="nav-link">Избранное</a>
+                <a href="#" class="nav-link">История</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40" alt="Профиль">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <!-- Боковая панель с категориями -->
+        <aside class="sidebar">
+            <div class="categories">
+                <h3>Категории</h3>
+                <ul class="category-list">
+                    <li class="category-item active">Все книги</li>
+                    <li class="category-item">Фантастика</li>
+                    <li class="category-item">Детективы</li>
+                    <li class="category-item">Романы</li>
+                    <li class="category-item">Биографии</li>
+                    <li class="category-item">Научная литература</li>
+                </ul>
+            </div>
+            <div class="reading-progress">
+                <h3>Прогресс чтения</h3>
+                <div class="progress-item">
+                    <span class="book-title">Война и мир</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 65%"></div>
+                    </div>
+                    <span class="progress-percent">65%</span>
+                </div>
+                <div class="progress-item">
+                    <span class="book-title">Преступление и наказание</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 30%"></div>
+                    </div>
+                    <span class="progress-percent">30%</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Основная область с книгами -->
+        <section class="book-section">
+            <div class="section-header">
+                <h2>Ваша библиотека</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="Поиск книг...">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+
+            <div class="books-grid">
+                <!-- Карточка книги 1 -->
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://via.placeholder.com/200x280" alt="Обложка книги">
+                        <div class="book-overlay">
+                            <button class="read-btn">Читать</button>
+                            <button class="favorite-btn">❤</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Война и мир</h3>
+                        <p class="book-author">Лев Толстой</p>
+                        <div class="book-meta">
+                            <span class="book-rating">★ 4.8</span>
+                            <span class="book-pages">1225 стр.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка книги 2 -->
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://via.placeholder.com/200x280" alt="Обложка книги">
+                        <div class="book-overlay">
+                            <button class="read-btn">Читать</button>
+                            <button class="favorite-btn">❤</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Преступление и наказание</h3>
+                        <p class="book-author">Фёдор Достоевский</p>
+                        <div class="book-meta">
+                            <span class="book-rating">★ 4.7</span>
+                            <span class="book-pages">671 стр.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка книги 3 -->
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://via.placeholder.com/200x280" alt="Обложка книги">
+                        <div class="book-overlay">
+                            <button class="read-btn">Читать</button>
+                            <button class="favorite-btn">❤</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Мастер и Маргарита</h3>
+                        <p class="book-author">Михаил Булгаков</p>
+                        <div class="book-meta">
+                            <span class="book-rating">★ 4.9</span>
+                            <span class="book-pages">480 стр.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка книги 4 -->
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://via.placeholder.com/200x280" alt="Обложка книги">
+                        <div class="book-overlay">
+                            <button class="read-btn">Читать</button>
+                            <button class="favorite-btn">❤</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Анна Каренина</h3>
+                        <p class="book-author">Лев Толстой</p>
+                        <div class="book-meta">
+                            <span class="book-rating">★ 4.6</span>
+                            <span class="book-pages">864 стр.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка книги 5 -->
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://via.placeholder.com/200x280" alt="Обложка книги">
+                        <div class="book-overlay">
+                            <button class="read-btn">Читать</button>
+                            <button class="favorite-btn">❤</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Евгений Онегин</h3>
+                        <p class="book-author">Александр Пушкин</p>
+                        <div class="book-meta">
+                            <span class="book-rating">★ 4.8</span>
+                            <span class="book-pages">240 стр.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка книги 6 -->
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="https://via.placeholder.com/200x280" alt="Обложка книги">
+                        <div class="book-overlay">
+                            <button class="read-btn">Читать</button>
+                            <button class="favorite-btn">❤</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Отцы и дети</h3>
+                        <p class="book-author">Иван Тургенев</p>
+                        <div class="book-meta">
+                            <span class="book-rating">★ 4.5</span>
+                            <span class="book-pages">288 стр.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Читательский режим (скрыт по умолчанию) -->
+    <div class="reader-modal" id="readerModal">
+        <div class="reader-header">
+            <button class="back-btn" id="backBtn">← Назад</button>
+            <h3 class="reader-title" id="readerTitle">Война и мир</h3>
+            <div class="reader-controls">
+                <button class="font-size-btn" id="fontSmaller">A-</button>
+                <button class="font-size-btn" id="fontBigger">A+</button>
+                <button class="theme-toggle-reader" id="themeToggleReader">🌙</button>
+            </div>
+        </div>
+        <div class="reader-content" id="readerContent">
+            <p>— Eh bien, mon prince. Gênes et Lucques ne sont plus que des apanages, des поместья, de la famille Buonaparte. Non, je vous préviens que si vous ne me dites pas que nous avons la guerre, si vous vous permettez encore de pallier toutes les infamies, toutes les atrocités de cet Antichrist (ma parole, j'y crois) — je ne vous connais plus, vous n'êtes plus mon ami, vous n'êtes plus мой верный раб, comme vous dites. Ну, здравствуйте, здравствуйте. Je vois que je vous fais peur, садитесь и рассказывайте.</p>
+            <p>Так говорила в июле 1805 года известная Анна Павловна Шерер, фрейлина и приближенная императрицы Марии Феодоровны, встречая важного и чиновного князя Василия, первого приехавшего на ее вечер. Анна Павловна кашляла несколько дней, у нее был грипп, как она говорила (грипп был тогда новое слово, употреблявшееся только редкими).</p>
+            <p>— Eh bien, mon prince. Gênes et Lucques ne sont plus que des apanages, des поместья, de la famille Buonaparte. Non, je vous préviens que si vous ne me dites pas que nous avons la guerre, si vous vous permettez encore de pallier toutes les infamies, toutes les atrocités de cet Antichrist (ma parole, j'y crois) — je ne vous connais plus, vous n'êtes plus mon ami, vous n'êtes plus мой верный раб, comme vous dites. Ну, здравствуйте, здравствуйте. Je vois que je vous fais peur, садитесь и рассказывайте.</p>
+        </div>
+        <div class="reader-footer">
+            <div class="progress-bar-reader">
+                <div class="progress-fill-reader" style="width: 25%"></div>
+            </div>
+            <div class="page-controls">
+                <button class="prev-page">← Предыдущая</button>
+                <span class="page-info">Страница 45 из 180</span>
+                <button class="next-page">Следующая →</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript код будет здесь
+    </script>
+</body>
+</html>
